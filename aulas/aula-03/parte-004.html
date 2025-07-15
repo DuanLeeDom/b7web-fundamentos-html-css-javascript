@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de teste</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-04.css">
+</head>
+<body>
+    <!-- 
+    ===========================================
+    TABELA EM HTML — EXPLICAÇÃO COMPLETA
+    ===========================================
+
+    <table> → Elemento que define a TABELA.
+    Atributos comuns:
+        - width="400"  → Define a largura da tabela (neste caso, 400 pixels).
+        - border="1"   → Define a espessura da borda (1 pixel).
+
+    <tr> → Table Row (linha da tabela).
+    Cada <tr> representa uma linha horizontal.
+
+    <th> → Table Header (célula de cabeçalho).
+    Aparece em negrito e centralizado por padrão.
+    Usado na primeira linha para definir os títulos das colunas.
+
+    <td> → Table Data (célula de dados).
+    Contém o conteúdo das linhas abaixo do cabeçalho.
+
+    Exemplo explicado:
+    ------------------
+
+    <table width="400" border="1"> → Cria uma tabela de 400px com borda visível.
+
+        <tr> → Primeira linha (linha do cabeçalho)
+            <th>Item 1</th> → Cabeçalho da primeira coluna
+            <th>Item 2</th> → Cabeçalho da segunda coluna
+        </tr>
+
+        <tr> → Segunda linha
+            <td>...</td> → Conteúdo da primeira coluna
+            <td>...</td> → Conteúdo da segunda coluna
+        </tr>
+
+        ... (outras linhas seguem o mesmo padrão)
+
+    → A quantidade de <td> dentro de um <tr> deve bater com o número de <th> definidos no cabeçalho.
+
+    DICA: para visual bonito e controle, use CSS junto com HTML.
+    -->
+
+    <h1>Página de teste</h1>
+
+    <table width="400" border="1">
+        <!-- 
+            <table> → Cria a tabela.
+            Atributos:
+            - width="400": define a largura total da tabela.
+            - border="1": cria uma borda visível de 1 pixel ao redor da tabela e das células.
+        -->
+
+        <!-- 
+            <thead> → Cabeçalho da tabela.
+            Serve para agrupar as linhas de título das colunas (não altera visualmente por padrão, mas melhora a estrutura e semântica).
+        -->
+        <thead>
+            <tr>
+                <th>Item 1</th> <!-- <th>: célula de cabeçalho, geralmente em negrito e centralizada -->
+                <th>Item 2</th>
+                <th>Item 3</th> 
+            </tr>
+        </thead>
+
+        <!-- 
+            <tbody> → Corpo da tabela.
+            Agrupa as linhas com os dados principais da tabela.
+        -->
+            
+        <tbody>
+            <tr>
+                <td>...</td> <!-- <td>: célula comum de dados -->
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>

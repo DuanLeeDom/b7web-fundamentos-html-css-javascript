@@ -1,0 +1,50 @@
+/* 
+======================================
+ ESTILIZAÇÃO POR TIPO DE ELEMENTO 
+======================================
+
+Aplica estilos diretamente a todos os elementos de um mesmo tipo.
+Exemplo: <h1>, <a>, <p>, etc.
+*/
+
+h1 {
+    font-family: Arial, sans-serif;  /* Define a fonte do texto */
+    font-size: medium;               /* Tamanho médio da fonte */
+}
+
+a {
+    font-style: italic;              /* Estilo itálico para links */
+}
+
+/* 
+======================================
+ ESTILIZAÇÃO POR ID
+======================================
+
+O símbolo "#" indica um seletor de ID.
+Aplica o estilo apenas ao elemento com o atributo id="titulo".
+
+Exemplo de uso no HTML:
+<h1 id="titulo">Título principal</h1>
+*/
+
+#titulo {
+    color: green; /* Cor do texto em verde */
+}
+
+
+/* 
+======================================
+ ESTILIZAÇÃO POR CLASSE
+======================================
+
+O ponto "." indica um seletor de classe.
+Aplica o estilo a todos os elementos que tiverem class="texto".
+
+Exemplo de uso no HTML:
+<p class="texto">Este parágrafo ficará vermelho.</p>
+*/
+
+.texto {
+    color: red; /* Cor do texto em vermelho */
+}
