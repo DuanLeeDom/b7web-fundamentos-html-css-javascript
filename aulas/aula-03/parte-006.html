@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilo-05.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Criação de formularios -->
+    <h1>Página de teste</h1>
+
+    <h2>Área de cadastro</h2>
+    <!-- parametro action -->
+    <!-- 
+        O elemento <form> define um formulário HTML.
+        Atributos importantes:
+        - action: especifica o destino (URL) para onde os dados do formulário serão enviados após o envio (submit).
+        - method: define o método de envio. Existem dois principais:
+            * GET: envia os dados pela URL, apropriado para buscas simples ou dados que não sejam sensíveis.
+            * POST: envia os dados de forma oculta no corpo da requisição, sendo mais seguro para dados sensíveis como senhas e dados pessoais.
+     -->
+    <form action="/aula-02/paginas/parte-004-login.html" method>
+    <!-- 
+        Abaixo estão exemplos dos diversos tipos (type) que podem ser utilizados com o elemento <input>.
+        Cada tipo define o formato da entrada e o comportamento do campo.
+
+        Também seguem explicações breves dos principais atributos utilizados nos campos de formulário:
+
+        - type: define o tipo de entrada (text, email, password, radio, etc.).
+        - name: nome do campo, usado para identificar o dado quando ele é enviado ao servidor.
+            É fundamental para o backend saber qual dado está sendo enviado.
+        - id: identificador único do campo na página.
+            É usado para associar o <label> ao campo, além de facilitar manipulação com JavaScript e CSS.
+        - value: valor padrão que já aparece preenchido no campo.
+        - placeholder: texto de dica que aparece dentro do campo antes de o usuário digitar.
+        - required: torna o preenchimento do campo obrigatório.
+        - disabled: desativa o campo, impedindo sua edição.
+        - readonly: impede a edição, mas ainda permite que o valor seja enviado.
+        - checked: marca um campo do tipo checkbox ou radio como selecionado por padrão.
+        - maxlength / minlength: define o número máximo/mínimo de caracteres permitidos.
+        - min / max: define o valor mínimo e máximo para campos do tipo number, date, etc.
+        - step: define o intervalo entre valores válidos (ex.: 2 em vez de 1 em um input number).
+        - autocomplete: sugere valores anteriores preenchidos automaticamente pelo navegador.
+        - autofocus: faz com que o campo receba o foco automaticamente ao carregar a página.
+        - pattern: expressa uma regra de validação por meio de expressões regulares (regex).
+    -->
+
+        <!-- Tipo texto: entrada comum de texto -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br/>
+
+        <!-- Tipo email: exige que o usuário digite um endereço de e=mail válido -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br/>
+
+        <!-- Tipo password: oculta os caracteres digitados -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"><br><br/>
+
+        <!-- Tipo radio: usando para selecionar apenas uma opção entre várias -->
+        <p>Sexo:</p>
+        <input type="radio" id="masc" name="sexo" value="masculino" checked>
+        <label for="masc">Masculino</label><br>
+        <input type="radio" id="fem" name="sexo" value="feminino">
+        <label for="fem">Feminino</label><br><br/>
+
+        <!-- Tipo checkbox: permite marcar múltipplas opções -->
+        <p>Interesses:</p>
+        <input type="checkbox" id="interesse1" name="interesses" value="tecnologia">
+        <label for="interesse1">Tecnologia</label>
+        <input type="checkbox" id="interesse2" name="interesses" value="arte">
+        <label for="interesse2">Arte</label><br><br>
+
+        <!-- Tipo number: aceita apenas números -->
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="0" max="120"><br><br>
+
+        <!-- Tipo date: insere uma data (com seletor de calendário) -->
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento"><br><br>
+
+        <!-- Tipo color: seletor de cor -->
+        <label for="color">Cor favorita:</label>
+        <input type="color" id="cor" name="cor"><br><br>
+
+        <!-- Tipo file: permite envio de arquivos -->
+        <label for="arquivo">Enviar arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo"><br><br>
+
+        <!-- Tipo hidden: campo invisível, útil para enviar dados que o usuário não precisa ver -->
+        <input type="hidden" name="token" value="abc123">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Área de Login</h2>
+    <form>
+
+    </form>
+
+    
+</body>
+</html>
