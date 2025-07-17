@@ -1,0 +1,28 @@
+/* HERANÇA EM CSS */
+/* Algumas propriedades (como cor e fonte) são herdadas automaticamente pelos elementos filhos */
+/* Outras propriedades (como largura, altura, margens, etc.) não são herdadas */
+/* A herança depende da natureza da propriedade, nem tudo passa para os filhos */
+
+/* Reset de margem padrão do body */
+body {
+    margin: 0; /* por exemplo a margin só não é herdável ela só muda nela mesma */
+    color: pink; /* isso é uma propriedade Herdável*/
+}
+
+/* A .container define estilos que afetam tanto ele quanto, em alguns casos, seus elementos filhos */
+.container {
+    width: calc(100% - 20px);
+    height: 200px;
+    background-color: #ccc;
+
+    color: #FF0000;         /* Herdável */
+    font-size: 30px;        /* Herdável */
+    border: 3px solid #00FF00;  /* Não herdável */
+}
+
+/* Estilo específico para a tag <strong> dentro do .container */
+/* Esse estilo sobrescreve a cor herdada só para o <strong> */
+.container strong {
+    color: #0000ff;
+    border: 3px solid #000;
+}

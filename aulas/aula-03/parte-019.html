@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+    <link rel="stylesheet" href="estilo-10.css">
+    <!--
+        HIERARQUIA DE APLICAÇÃO DO CSS (ordem de prioridade):
+        EFEITO DE CASCATA
+
+        1º - CSS EXTERNO (menos prioridade):
+            Exemplo: <link rel="stylesheet" href="estilo-10.css">
+            Este é o primeiro a ser carregado, vindo de um arquivo separado.
+
+        2º - CSS INTERNO (prioridade média):
+            Exemplo: <style> dentro do <head>
+            Substitui estilos externos se afetar os mesmos elementos.
+
+        3º - CSS INLINE (maior prioridade):
+            Exemplo: style="color: #0000FF;" dentro do próprio elemento HTML.
+            Tem mais força que os estilos internos e externos e **sempre prevalece**, 
+            a menos que seja sobrescrito por uma regra com `!important`.
+
+        Nesta página:
+        - A classe `.container` recebe `color: #00FF00` do CSS interno (verde),
+        - Mas como há um `style="color: #0000FF;"` inline, ele tem prioridade e o texto aparece em azul.
+
+        OBS: essa hierarquia segue a ordem de prioridade, **não a ordem de leitura no código**.
+
+        são esses de css são esses:
+        - CSS inline: dentro da própria tag (exemplo no <h1> e <a>)
+        - CSS interno: dentro da tag <style> no <head>
+        - CSS externo: arquivo separado, exemplo: estilo.css
+    -->
+
+    <!-- tem uma tag style aplicando um verde  -->
+    <style type="text/css">
+        .container {
+            color: #00FF00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título do Site</h1>
+    <!-- css conteudo azul sendo aplicado no elemento -->
+    <div class="container" style="color: #0000FF;">
+        Este é um <strong>texto</strong> qualquer
+    </div>
+    <div>
+        Este é um outro texto.
+    </div>
+</body>
+</html> 
