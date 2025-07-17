@@ -1,0 +1,59 @@
+/* 
+   CORES EM CSS
+
+   1. Cores nomeadas (color keywords):
+      - Os navegadores reconhecem uma lista de nomes de cores pré-definidos.
+      - Exemplos: black, red, green, white, blue, violet, pink, etc.
+      - São práticas para uso rápido, mas limitadas em variedade.
+
+   2. Cores em formato hexadecimal (#RRGGBB):
+      - Representam as cores com base em combinações de vermelho (RR), verde (GG) e azul (BB).
+      - Cada par vai de 00 a FF (equivalente a 0–255 em decimal).
+      - Exemplo: #FFFFFF = branco puro (máximo de vermelho, verde e azul).
+      - Exemplo: #FF0000 = vermelho puro.
+
+   3. Cores com RGB (rgb()):
+      - Formato decimal para representar cores com três valores: vermelho, verde e azul.
+      - Cada valor vai de 0 a 255.
+      - Exemplo: rgb(255, 0, 0) = vermelho puro.
+      - Exemplo: rgb(0, 0, 255) = azul puro.
+      - Vantagem: facilita a manipulação dinâmica com JavaScript e transparência com rgba().
+
+    4. Cores com HSL (hsl()):
+      - HSL significa Hue (matiz), Saturation (saturação) e Lightness (luminosidade).
+  
+      - Hue (matiz): é o tom da cor e vai de 0 a 360 graus na roda de cores.
+      - 0 = vermelho
+      - 120 = verde
+      - 240 = azul
+      - 360 volta ao vermelho
+  
+      - Saturation (saturação): intensidade da cor, vai de 0% (cinza) até 100% (cor viva).
+      - Lightness (luminosidade): brilho da cor, vai de 0% (preto) a 100% (branco).
+      - 50% é o valor "normal" da cor.
+  
+      - Exemplo: hsl(0, 100%, 50%) → vermelho forte
+      - Exemplo: hsl(240, 100%, 50%) → azul forte
+      - Exemplo: hsl(0, 0%, 50%) → cinza (sem cor, brilho médio)
+  
+      - Vantagem do HSL: facilita criar variações de cores com mais controle visual do que RGB.
+    
+    5. Variáveis de cor – exemplo: currentColor
+
+    - A palavra-chave currentColor representa automaticamente a cor definida na propriedade 'color' do elemento atual.
+    - Ou seja, ela reutiliza a cor do texto, o que ajuda a manter consistência no design e facilita a manutenção do código.
+    - Muito útil, por exemplo, em bordas, sombras ou ícones que devem ter a mesma cor do texto.
+
+    Exemplo:
+    color: red;
+    border: 1px solid currentColor; ← a borda será vermelha, igual ao texto.
+*/
+
+body {
+    margin: 0;
+    color: #F00;
+}
+
+h1 {
+    border: 2px solid currentColor;
+}

@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+.box {
+    font-size: 20px;
+    color: #0000FF;
+}
+
+h1 {
+    font-size: 30px;
+    color: red;
+}
+
+/* basicamente o inherit herda do elemnto */
+.box h1 {
+    /* ele vai herdar tudo que é do box */
+    font-size: inherit;
+    color: inherit;
+}
+
