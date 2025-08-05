@@ -7,8 +7,9 @@ Seu conteúdo é voltado para fins educacionais, com o intuito de reforçar o ap
 
 O repositório está organizado de acordo com os módulos ou temas abordados nos cursos, sendo cada pasta correspondente a um assunto específico, como:
 
-- `html-css/` – Estudos relacionados à estruturação e estilização de páginas web.
-- `javascript/` – Scripts e exercícios referentes à linguagem JavaScript.
+- `fundamentos-em-html-css/` – Estudos relacionados à estruturação e estilização de páginas web.
+- `introducao-ao-javascript/` – Scripts e exercícios referentes à linguagem JavaScript.
+- `javascript-avancado/` – Scripts e exercícios referentes à linguagem JavaScript avançado.
 
 ## Requisitos
 
