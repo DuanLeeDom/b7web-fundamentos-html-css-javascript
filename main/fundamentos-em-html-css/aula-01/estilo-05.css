@@ -1,0 +1,56 @@
+/*
+===========================================
+ CORES NO CSS (exemplo com Hexadecimal curto)
+===========================================
+
+#F00  → equivale a #FF0000 → Vermelho
+#0000FF → Azul puro
+*/
+
+#titulo {
+    background-color: #F00; /* fundo vermelho */
+}
+
+
+/*
+===========================================
+ TIPOS DE BORDA EM CSS
+===========================================
+
+Sintaxe:
+border: [largura] [estilo] [cor];
+
+Exemplo:
+border: 5px solid blue;
+
+Principais estilos:
+- solid   → linha sólida
+- dotted  → pontilhada
+- dashed  → tracejada
+- double  → linha dupla
+- groove  → entalhada (efeito 3D)
+    /* border: 5px solid #0000FF;   linha azul sólida */
+    /* border: 5px dotted #0000FF;  linha azul pontilhada */
+    /* border: 5px dashed #0000FF;  linha azul tracejada */
+    /* border: 5px double #0000FF;  linha azul dupla */
+    /* border: 5px groove #0000FF;  linha azul com efeito 3D */
+    /* border-right: 5px solid #0000FF; */
+
+p {
+    background-color: #0000FF;
+    border-radius: 5px;
+}
+
+div {
+    background-color: #00FF00;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 3px solid darkgreen;
+}
+
+img {
+    border: 5px solid #FF0000;
+    border-radius: 30px;
+    overflow: hidden;
+}

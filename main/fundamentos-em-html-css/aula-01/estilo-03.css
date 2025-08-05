@@ -1,0 +1,92 @@
+/*
+========================================
+ SELETOR DESCENDENTE: ol li
+========================================
+
+Este seletor aplica o estilo a todos os elementos <li> (itens de lista)
+que estejam DENTRO de um <ol> (lista ordenada).
+
+Ou seja, o CSS verifica se dentro do <ol> existe um <li>, e aplica as regras.
+
+Exemplo de uso no HTML:
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ol>
+
+Neste caso, todos os <li> ficarão com texto rosa.
+*/
+
+ol li {
+    color: pink; /* Cor do texto dos itens da lista ordenada */
+}
+
+/*
+===========================================
+ SELETOR POR NOME DE ELEMENTO
+===========================================
+
+Aplica o estilo a todos os elementos de um determinado tipo (ex: h1, p, a, etc.).
+*/
+
+NOME_DO_ELEMENTO {
+    /* Estilo para todos os elementos com esse nome */
+}
+
+
+/*
+===========================================
+ SELETOR POR ID
+===========================================
+
+O símbolo "#" indica que se está selecionando um elemento específico por seu ID.
+Cada ID deve ser único na página.
+*/
+
+#ID_DO_ELEMENTO {
+    /* Estilo aplicado somente ao elemento com este ID */
+}
+
+
+/*
+===========================================
+ SELETOR POR CLASSE
+===========================================
+
+O ponto "." representa uma classe. Pode ser usada em vários elementos diferentes.
+*/
+
+.CLASS_DO_ELEMENTO {
+    /* Estilo aplicado a todos os elementos com esta classe */
+}
+
+
+/*
+===========================================
+ AGRUPAMENTO DE SELETORES
+===========================================
+
+Seletor múltiplo, separado por vírgulas.
+Aplica o mesmo estilo a diferentes elementos (podem ser tags, classes ou IDs).
+*/
+
+ELEMENTO, OUTROELEMENTO {
+    /* Estilo aplicado a ambos os elementos */
+}
+
+
+/*
+===========================================
+ SELETOR DESCENDENTE
+===========================================
+
+Aplica estilo ao segundo elemento SOMENTE quando estiver dentro do primeiro.
+
+Exemplo:
+div p { ... }
+-> Só afeta <p> que estiver DENTRO de <div>
+*/
+
+ELEMENTO OUTROELEMENTO {
+    /* Estilo aplicado ao OUTROELEMENTO dentro de ELEMENTO */
+}

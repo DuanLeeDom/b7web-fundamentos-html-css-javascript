@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+    <link rel="stylesheet" href="estilo-06.css">
+</head>
+<body>
+    <!-- tipos de validações -->
+    <form method="GET" action="blablabla.php">
+
+    <!-- 
+        hidden = campo oculto (não aparece para o usuário)
+        Usado para enviar dados invisíveis no formulário, como:
+        - ID de quem está sendo editado
+        - Informações internas que precisam ser enviadas sem exibição 
+        - outros exemplos: token...
+    -->
+
+        <input type="hidden" name="country" value="BR">
+
+        <fieldset> <!-- tag <fieldset> Cria um conjunto de campos -->
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro nome:<br/>
+                <input type="text" name="name"/> <!-- required = obrigatório | minlength = mínimo de caracteres -->
+            </label><br/>
+            <label>
+                Sobrenome:<br/>
+                <input type="text" name="lastname"/>
+            </label><br/>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da empresa:<br/>
+                <input type="text" name="companyname"/>
+            </label><br/>
+            <label>
+                Cargo na empresa:<br/>
+                <input type="text" name="companyjobtitle"/>
+            </label><br/>
+        </fieldset>
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

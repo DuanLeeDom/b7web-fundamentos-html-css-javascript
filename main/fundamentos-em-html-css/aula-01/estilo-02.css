@@ -1,0 +1,43 @@
+/*
+======================================
+ EXEMPLO INDIVIDUAL DE SELETORES
+======================================
+
+Estilizando separadamente por ID e por classe.
+*/
+
+/* #titulo {
+    color: blue;        
+    font-size: 25px;     
+}
+
+.texto {
+    color: blue;         
+    font-size: 25px;    
+} */
+
+/*
+======================================
+ AGRUPAMENTO DE SELETORES
+======================================
+
+Usa-se vírgula (,) para aplicar o mesmo estilo a múltiplos seletores.
+
+Neste exemplo, o estilo será aplicado a:
+1. Qualquer elemento com id="titulo"
+2. Todos os elementos com class="texto"
+*/
+
+#titulo, .texto {
+    color: blue;         
+    font-size: 25px;
+}
+
+#titulo {
+    font-weight: normal;
+}
+
+.texto {
+    font-weight: bold;
+
+}

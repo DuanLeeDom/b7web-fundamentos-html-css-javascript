@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+p {
+    color: #000000;
+    margin: 0 300px 30px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    /* text-decoration: overline;  o traço ficara em cima do texto */
+    /* text-decoration: line-through; é um riscado no meio parecido com o <del> */
+}
+a:hover {
+    text-decoration: underline;
+}

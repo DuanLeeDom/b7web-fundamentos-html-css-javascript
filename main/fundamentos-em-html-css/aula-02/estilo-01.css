@@ -1,0 +1,33 @@
+/*
+===========================================
+ EXEMPLO DE BORDA, PADDING E MARGIN
+===========================================
+
+→ body: Remove a margem padrão do navegador.
+→ .exemplo: Classe que aplica os estilos abaixo.
+
+- border: cria uma borda ao redor do elemento
+  Sintaxe: [largura] [estilo] [cor]
+  Exemplo: 1px solid #00FF00 → borda verde sólida
+
+- padding: espaço **interno** (entre o conteúdo e a borda)
+- margin: espaço **externo** (entre o elemento e outros elementos)
+
+→ Ordem dos valores em padding/margin com 4 lados:
+   CIMA, DIREITA, BAIXO, ESQUERDA
+   (pense no sentido horário de um relógio)
+*/
+
+body {
+    margin: 0; /* Remove a margem padrão do navegador */
+}
+
+.exemplo {
+    border: 1px solid #00FF00; /* Borda verde */
+
+    /* padding: espaço interno → 10px cima, 20px direita, 10px baixo, 10px esquerda */
+    padding: 10px 20px 10px 10px;
+
+    /* margin: espaço externo → (comentado, pode ser ativado para teste) */
+    /* margin: 10px; */
+}

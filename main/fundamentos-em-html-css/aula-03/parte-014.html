@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+    <link rel="stylesheet" href="estilo-06.css">
+</head>
+<body>
+    <!-- tipos de validações -->
+    <form method="POST" action="blablabla.php">
+        <fieldset> <!-- tag <fieldset> Cria um conjunto de campos -->
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro nome:<br/>
+                <input type="text" name="name"/> <!-- required = obrigatório | minlength = mínimo de caracteres -->
+            </label><br/>
+            <label>
+                Sobrenome:<br/>
+                <input type="text" name="lastname"/>
+            </label><br/>
+            <label>
+                Idade:<br/>
+                <input type="number" name="age" min="18" max="120"/> <!-- step = salto/intervalo | min = valor mínimo | max = valor máximo -->
+            </label><br/>
+            <label>
+                E-mail:<br/>
+                <!-- pattern = validação personalizada além do tipo do input -->
+                <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Digite um e-mail válido (ex: exemplo@dominio.com)" required/>
+            </label><br/>
+            <label>
+                Data de nascimento:<br/>
+                <!-- aceita formato internacional para funcionar no min  -->
+                <input type="date" name="birthdate" min="2025-07-15">
+            </label><br/>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da empresa:<br/>
+                <input type="text" name="companyname"/>
+            </label><br/>
+            <label>
+                Cargo na empresa:<br/>
+                <input type="text" name="companyjobtitle"/>
+            </label><br/>
+        </fieldset>
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

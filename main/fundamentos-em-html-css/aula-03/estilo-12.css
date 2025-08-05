@@ -1,0 +1,77 @@
+/* UNIDADE "em" — RELATIVA AO TAMANHO DA FONTE DO ELEMENTO PAI */
+
+/*
+   O "em" é uma unidade relativa baseada no font-size do elemento **pai direto**.
+
+   - No exemplo abaixo, o <body> define font-size: 20px;
+   - O <h1> e a .box usam 3em → ou seja, 3 × 20px = 60px;
+   - A .box-interno usa 10em, mas o valor de 1em aqui será 60px (herdado da .box);
+     Então, 10em = 10 × 60px = 600px.
+
+   → Cada nível pode multiplicar o valor anterior, pois "em" sempre olha para o font-size do **pai imediato**.
+
+   famoso efeito cascata também é aplicado aqui
+
+   rem = unidade relativa ao font-size da raiz (normalmente o <html>)
+   É mais previsível que o em, pois não depende do pai direto.
+   Antigamente não era muito usada por falta de suporte, 
+   mas hoje é amplamente aceita pelos navegadores modernos.
+*/
+
+/* 
+body {
+    font-size: 20px;
+}
+
+h1 {
+    3 × 20px = 60px 
+    font-size: 3em; 
+}
+
+.box {
+    3 × 20px = 60px
+    font-size: 3em; 
+}
+
+.box-interno {
+    10 × 60px = 600px
+    width: 10em;      
+    10 × 60px = 600px
+    height: 10em;      
+    background-color: #999;
+}
+*/
+
+/* 
+    ENTENDENDO O USO DO rem (root em)
+
+    - A unidade rem é **relativa ao font-size do elemento raiz**, que é o <html>.
+    - Por padrão, se você não definir nada, a maioria dos navegadores usa 16px como valor base.
+    - No exemplo abaixo, definimos: html { font-size: 10px; }
+      → Assim, 1rem = 10px, facilitando os cálculos.
+
+    VANTAGEM: rem é mais previsível que em, pois **não depende de elementos pais intermediários**.
+    É ideal para layouts consistentes e responsivos.
+*/
+
+html {
+    font-size: 10px; /* Define que 1rem será igual a 10px */
+}
+
+body {
+    font-size: 20px; /* Valor local do body, mas não afeta o rem */
+}
+
+h1 {
+    font-size: 3rem; /* 3 × 10px = 30px */
+}
+
+.box {
+    font-size: 2rem; /* 2 × 10px = 20px */
+}
+
+.box-interno {
+    width: 10rem;        /* 10 × 10px = 100px */
+    height: 10rem;       /* 10 × 10px = 100px */
+    background-color: #999;
+}

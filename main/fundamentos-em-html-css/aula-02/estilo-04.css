@@ -1,0 +1,48 @@
+/*
+===========================================
+ CONFIGURAÇÃO GERAL
+===========================================
+*/
+
+/* 
+Aplica a todos os elementos da página. 
+O uso de `border-box` evita que padding e bordas alterem o tamanho total do elemento.
+*/
+* {
+    box-sizing: border-box;
+}
+
+/* 
+Remove as margens padrão do navegador. 
+Boa prática para começar um layout "do zero".
+*/
+body {
+    margin: 0px;
+}
+
+/*
+===========================================
+ ESTILIZAÇÃO DE LINKS (classe .link)
+===========================================
+*/
+
+.link {
+    color: green;         /* Cor padrão do link */
+    font-size: 30px;      /* Tamanho da fonte */
+}
+
+/* 
+:hover — Pseudoclasse ativada quando o mouse passa por cima do link. 
+Usado para criar efeitos visuais de interação.
+*/
+.link:hover {
+    color: red;           /* Muda a cor do link ao passar o mouse */
+}
+
+/* 
+:visited — Pseudoclasse ativada quando o link já foi clicado antes. 
+Exibe uma cor diferente para links "já visitados".
+*/
+.link:visited {
+    color: pink;          /* Cor do link após ter sido visitado */
+}
